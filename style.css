@@ -1,0 +1,999 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --seccion-color: rgb(255, 99, 71);
+    --titulo-color: #191919;
+    --size-titulo: 15px;
+    --size-subtitulo: 45px;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #191919;
+}
+
+
+/*Estilos para el Header*/
+header {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+
+header .btn-menu{
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    display: none;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15%;
+}
+
+.lista-navegacion {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.lista-navegacion li {
+    list-style: none;
+    
+}
+
+.lista-navegacion li a {
+    text-decoration: none;
+    color: #191919;
+    font-style: normal;
+    font-size: 13px;
+
+}
+
+.boton-lista-navegacion {
+    color: tomato;
+    width: 150px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+
+@media screen and (min-width:1030px) {
+    header nav{
+        display: flex;
+    }
+    header .btn-menu{
+        display: none;
+    }
+    
+}
+
+/*Seccion Welcome Main*/
+.welcome {
+    margin-top: 8%;
+    padding: 0 50px;
+}
+
+.contenedor-welcome {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    
+    
+}
+
+/*main izquierdo*/
+.welcome-izquierdo {
+    flex: 1;
+    padding-right: 60px;
+    max-width: 450px;
+}
+
+.welcome-izquierdo h3 {
+    font-style: normal;
+    font-size: 10px;
+    margin-bottom: 25px;
+
+}
+
+.welcome-izquierdo h1 {
+    font-style: normal;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.welcome-izquierdo h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+span {
+    color: tomato;
+}
+
+.welcome-izquierdo p {
+    margin-bottom: 60px;
+}
+
+.wti {
+    display: flex;
+    gap: 130px
+}
+
+.contenedor-iconos {
+    display: flex;
+    gap: 70px;
+
+}
+
+.welcome-iconos-izquierda {
+    display: flex;
+    width: 30%;
+
+}
+
+
+.welcome-titulo-iconos p {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.welcome-iconos-derecha {
+    display: flex;
+    width: 30%;
+}
+
+
+
+.tarjetas-iconos {
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+    box-shadow: 10px 5px 5px rgb(234, 228, 228);
+    text-align: center;
+}
+
+.tarjetas-iconos i {
+    font-size: 15px;
+}
+
+
+
+/*main derecho*/
+.welcome-derecho {
+    display: flex;
+    flex: 1;
+
+}
+
+.welcome-derecho .imagen {
+    width: 350px;
+    height: 350px;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+
+}
+
+@media screen and (max-width:1100px) {
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome .contenedor-welcome{
+        width: 80%;
+        height: 198px;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .welcome .contenedor-welcome{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        height: 150vh;
+    }
+}
+
+
+@media screen and(max-width: 400px) {
+    .welcome{
+        padding: 0 30px;
+    }
+}
+
+/*Seccion Features*/
+/*Titulos y Subtitulos de todas las secciones*/
+h4 {
+    color: var(--seccion-color);
+    font-size: var(--size-titulo);
+}
+
+h5 {
+    color: var(--size-subtitulo);
+    font-size: var(--size-subtitulo);
+
+}
+
+/*Tarjetas de seccion Features*/
+.features {
+    margin-top: 8%;
+}
+
+.features h4,
+h5 {
+    margin-left: 23%;
+}
+
+.contenedor-features {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-features {
+    width: 50%;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-features i {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-features h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-features p {
+    font-size: 15px;
+    font-style: normal;
+}
+
+/*Seccion Portfolio*/
+
+.portfolio {
+    margin-top: 8%;
+
+}
+
+.portfolio h4 {
+    text-align: center;
+}
+
+.portfolio h5 {
+    margin-left: 42%;
+}
+
+.contenedor-portfolio {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tarjeta-portfolio {
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-portfolio img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.tarjeta-portfolio-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tarjeta-portfolio h2 {
+    font-size: 10px;
+    color: tomato;
+}
+
+.tarjeta-portfolio h6 {
+    font-size: 10px;
+    color: gray;
+}
+
+/*Seccion My Resume*/
+.my-resume {
+    margin-top: 8%;
+
+}
+
+.my-resume h4 {
+    text-align: center;
+}
+
+.my-resume h5 {
+    margin-left: 42%;
+}
+
+
+.menu-my-resume {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-my-resume .menumy {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+.education-job {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education h4 {
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-bottom: 10px;
+}
+
+
+.educacion-izquierda {
+    max-width: 300px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-izquierda-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+.lista-promedio {
+    color: tomato;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 10%;
+    max-width: 400px;
+    margin: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+.educacion-texto {
+    font-size: 18px;
+}
+
+.educacion-texto1 {
+    font-size: 10px;
+}
+
+
+.job h4 {
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-bottom: 10px;
+}
+
+
+/*Seccion Testimonial*/
+
+.testimonial {
+    margin-top: 8%;
+}
+
+.testimonial h4 {
+    text-align: center;
+}
+
+.testimonial h5 {
+    margin-left: 42%;
+}
+
+.contenedor-testimonial {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+
+/*sector izquierdo de testimonial*/
+
+.tarjeta-testimonial-izquierda {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+.tarjeta-testimonial-izquierda img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+
+}
+
+.tarjeta-testimonial-texto h2 {
+    font-size: 10px;
+    color: tomato;
+    margin-bottom: 15px;
+}
+
+/*Sector derecho de Testimonial*/
+.icono-testimonial {
+    font-size: 90px;
+    margin-left: 40px;
+}
+
+.tarjeta-derecha {
+    max-width: 450px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-derecha p {
+    margin-top: 20px;
+}
+
+.tarjeta-derecha-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+
+
+}
+
+.tarjeta-testimonial-titulo {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 12px;
+
+}
+
+.lista-start {
+    text-align: center;
+    font-size: 5px;
+    margin-bottom: 20px;
+    width: 10%;
+    max-width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+
+.lista-puntos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+/*Seccion Clientes*/
+
+.clientes {
+    margin-top: 8%;
+}
+
+.clientes h4,
+h5 {
+    margin-left: 23%;
+}
+
+.contenedor-clientes {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.lista-lenguajes {
+    width: 70%;
+    max-width: 200px;
+    margin: 10px;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    height: 400px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+.lista-lenguajes .lenguajes {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+
+}
+
+
+
+
+.contenedor-tarjetas {
+    display: flex;
+    width: 60%;
+    max-width: 900px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.lista-tarjetas {
+    width: 50%;
+    max-width: 150px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.lista-tarjetas i {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.lista-tarjetas p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.estilo-lenguajes li a {
+    text-decoration: none;
+    color: #191919;
+    font-style: normal;
+
+}
+
+/*Seccion Pricing*/
+.pricing {
+    margin-top: 8%;
+}
+
+.contenedor-pricing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-titulo-pricing {
+    width: 40%;
+}
+
+.contenedor-titulo-pricing h4 {
+    margin-left: 40%;
+}
+
+.contenedor-titulo-pricing h5 {
+    margin-left: 30%;
+}
+
+
+.contenedor-page-pricing {
+    width: 600px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+    border-radius: 10px;
+}
+
+.menu-pricing {
+    display: flex;
+}
+
+.menu-pricing .menu {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+
+}
+
+.menu-pricing1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.menu-pricing1 button {
+    color: red;
+    font-size: 25px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 40px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(202, 204, 204));
+}
+
+.menu-pricing1 h3 {
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.menu-pricing1 p {
+    margin-left: 20px;
+
+}
+
+.menu-pricing2 p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu-pricing3 {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.lista1 li {
+    width: 100%;
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.lista2 li {
+    width: 100%;
+    list-style: none;
+    margin-left: 200px;
+
+}
+
+.menu-pricing4 {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+}
+
+.menu-pricing4 button {
+    color: tomato;
+    font-size: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 40px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(202, 204, 204));
+}
+
+.menu-pricing5 p {
+    color: gray;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+/*Seccion My Blog*/
+
+.myblog {
+    margin-top: 8%;
+}
+
+.myblog h4 {
+    text-align: center;
+}
+
+.myblog h5 {
+    margin-left: 45%;
+
+}
+
+.contenedor-myblog {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.tarjeta-myblog {
+    width: 70%;
+    max-width: 200px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-myblog img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: -40px;
+}
+
+.tarjeta-myblog-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tarjeta-myblog h2 {
+    font-size: 10px;
+    color: tomato;
+}
+
+.tarjeta-myblog h6 {
+    font-size: 10px;
+    color: gray;
+}
+
+/*seccion Contact*/
+
+.contact {
+    margin-top: 8%;
+}
+
+.contact h4 {
+    text-align: center;
+}
+
+.contact h5 {
+    margin-left: 39%;
+}
+
+.contacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Seccion Contacto y Datos*/
+.contacto-datos {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.tarjeta-contacto-izquierda img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.tarjeta-contacto-texto p {
+    margin-bottom: 20px;
+}
+
+.tarjeta-parrafo p {
+    margin-bottom: 15px;
+}
+
+.titulo-iconos p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contacto-iconos-izquierda {
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+}
+
+/*Seccion Contacto y Formulario*/
+
+.contacto-formulario {
+    display: flex;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(234, 228, 228);
+    background: linear-gradient(to top, white, rgb(228, 226, 226));
+}
+
+.contacto-formulario h6 {
+    color: gray;
+    font-size: 10px;
+}
+
+.nombre-formulario {
+    display: flex;
+
+}
+
+.nombre-formulario h6 {
+    margin-bottom: 30px;
+    color: grey;
+    font-size: 10px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(212, 207, 207);
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+textarea {
+    height: 150px;
+    margin-top: 15px;
+}
+
+input {
+    height: 20px;
+    margin-top: 15px;
+}
+
+.submit {
+    background-color: tomato;
+    color: white;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    margin-left: 5px;
+
+
+}
+
+
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    margin-top: 150px;
+}
+
+.imagenfooter {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer-portfolio p {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-portfolio span {
+    justify-content: center;
+    text-align: center;
+    color: #191919;
+    margin-left: -30px;
+    font-size: 15px;
+}
